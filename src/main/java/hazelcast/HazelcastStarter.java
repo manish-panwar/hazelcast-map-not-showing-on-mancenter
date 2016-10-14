@@ -1,3 +1,5 @@
+package hazelcast;
+
 import com.hazelcast.config.*;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
@@ -21,7 +23,6 @@ public class HazelcastStarter {
                 new ManagementCenterConfig()
                         .setEnabled(true)
                         .setUrl("http://10.44.73.198:8080/mancenter"));
-
 
         // If we remove below line then MAP start showing on Management Center.
         config.getMapConfigs().put("111", new MapConfig().setName("ABC").setStatisticsEnabled(false).setBackupCount(0).setAsyncBackupCount(0));
