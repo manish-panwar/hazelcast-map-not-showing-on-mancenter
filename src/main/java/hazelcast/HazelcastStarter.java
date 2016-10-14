@@ -18,7 +18,7 @@ public class HazelcastStarter {
                         new MulticastConfig().setEnabled(false))
                 .setTcpIpConfig(
                         new TcpIpConfig().setEnabled(true)
-                                .addMember("10.84.195.214").addMember("192.168.156.1")));
+                                .addMember("some_host").addMember("some_host")));
         config.setManagementCenterConfig(
                 new ManagementCenterConfig()
                         .setEnabled(true)
